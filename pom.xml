@@ -17,6 +17,17 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- admin需要的依赖 -->
+		<!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-client -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>2.0.1</version>
+		</dependency>
 		<!--web应用基本环境配置 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -50,12 +61,20 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.3.5</version>
 		</dependency>
-		<!-- mysql驱动  -->
+		<!-- mysql驱动 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-dependencies</artifactId>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<build>
 		<plugins>
 			<!-- spring-boot-maven-plugin插件就是打包spring boot应用的 -->
