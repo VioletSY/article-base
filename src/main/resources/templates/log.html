@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+		<base href=".">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<meta name="theme-color" content="#42d3a5">
+		<title>
+			山东国子软件股份有限公司
+		</title>
+		<link th:href="@{/css/chunk-common.2cd84e18.css}" rel="stylesheet">
+		<link  th:href="@{/css/chunk-common.2cd84e18.css}" rel="stylesheet">
+		<link  th:href="@{/css/sba-core.80e2ff1d.css}" rel="stylesheet">
+		<link  th:href="@{/css/chunk-common.2cd84e18.css}" rel="stylesheet">
+		<link  th:href="@{/css/sba-core.80e2ff1d.css}" rel="stylesheet">
+		<link  th:href="@{/css/index.css}" rel="stylesheet">
+		<link  th:href="@{/css/common.css}" rel="stylesheet">
+	</head>
+	<body>
+		<body>
+			<div id="app">
+				<nav id="navigation" class="navbar is-fixed-top" applications-initialized="true">
+					<div class="container">
+						<div class="navbar-brand">
+							<a href="/" class="navbar-item logo is-active">
+								<img src="/images/icon-spring-boot-admin.svg">
+								<span>
+									山东国子软件股份有限公司
+								</span>
+							</a>
+							<div class="navbar-burger burger">
+								<span>
+								</span>
+								<span>
+								</span>
+								<span>
+								</span>
+							</div>
+						</div>
+						<div class="navbar-menu">
+							<div class="navbar-end">
+								<a class="navbar-item">
+									应用墙
+								</a>
+								<a href="/index" class="navbar-item">
+									应用
+								</a>
+								<a href="/log" class="navbar-item">
+									日志报表
+								</a>
+								<a class="navbar-item">
+									关于我们
+								</a>
+								<div class="navbar-item has-dropdown is-hoverable">
+									<a class="navbar-link">
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle"
+										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-user-circle fa-w-16 fa-lg">
+											<path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"
+											class="">
+											</path>
+										</svg>
+										<span>
+											user
+										</span>
+									</a>
+									<div class="navbar-dropdown">
+										<a class="navbar-item">
+											<form  method="post">
+												<input type="hidden" name="_csrf" value="7ea36e32-f667-4f7b-9770-c7fab945d5ab">
+												<button type="submit" value="logout" class="button is-icon">																									
+													<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt"
+														role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-sign-out-alt fa-w-16">
+													<path fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"
+													class="">
+													</path>
+												</svg>												
+												<span>
+														注销
+													</span>
+												</button>
+											</form>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="section" views="" applications="[object Object],[object Object],[object Object]"
+				applications-initialized="true">
+					<div class="container">
+						<h1 class="title">
+							事件日志
+						</h1>
+						<!---->						
+						<table class="journal table is-fullwidth is-hoverable">
+							<thead>
+								<tr>
+									<th>
+										应用
+									</th>
+									<th>
+										实例
+									</th>
+									<th>
+										时间
+									</th>
+									<th>
+										事件
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 14:09:32.425
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(OFFLINE)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 14:02:41.660
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 14:02:22.426
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(OFFLINE)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 14:01:01.791
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 14:00:42.425
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(OFFLINE)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:57:30.808
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:57:30.496
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:57:00.625
+									</td>
+									<td>
+										<span>
+											ENDPOINTS_DETECTED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:57:00.526
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:57:00.422
+									</td>
+									<td>
+										<span>
+											ENDPOINTS_DETECTED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:57:00.416
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:57:00.410
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:57:00.408
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:56:35.388
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:56:35.387
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:56:35.387
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:56:02.423
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(OFFLINE)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										PROVIDER-TICKET
+									</td>
+									<td>
+										d4995be540f7
+									</td>
+									<td>
+										18.12.2019 13:52:03.002
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:50:03.254
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:50:02.885
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:49:02.821
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										PROVIDER-TICKET
+									</td>
+									<td>
+										d4995be540f7
+									</td>
+									<td>
+										18.12.2019 13:48:52.428
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(OFFLINE)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:41:02.521
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(DOWN)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										GOOGOSOFT-MICRO-SERVICE-USER
+									</td>
+									<td>
+										848c62fe233b
+									</td>
+									<td>
+										18.12.2019 13:41:02.342
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										PROVIDER-TICKET
+									</td>
+									<td>
+										d4995be540f7
+									</td>
+									<td>
+										18.12.2019 13:39:32.356
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(DOWN)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										PROVIDER-TICKET
+									</td>
+									<td>
+										d4995be540f7
+									</td>
+									<td>
+										18.12.2019 13:39:32.232
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:38:32.182
+									</td>
+									<td>
+										<span>
+											ENDPOINTS_DETECTED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:38:32.177
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:38:32.168
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:38:02.138
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:22:33.306
+									</td>
+									<td>
+										<span>
+											ENDPOINTS_DETECTED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:22:33.291
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										ZUUL-GATEWAY
+									</td>
+									<td>
+										13509344eca9
+									</td>
+									<td>
+										18.12.2019 13:22:33.131
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:22:03.281
+									</td>
+									<td>
+										<span>
+											ENDPOINTS_DETECTED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:22:03.195
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:22:03.090
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:21:48.074
+									</td>
+									<td>
+										<span>
+											DEREGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:13:03.792
+									</td>
+									<td>
+										<span>
+											ENDPOINTS_DETECTED
+										</span>
+										<!---->
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:13:03.695
+									</td>
+									<td>
+										<span>
+											STATUS_CHANGED
+										</span>
+										<span>
+											(UP)
+										</span>
+									</td>
+								</tr>
+								<tr class="is-selectable">
+									<td>
+										SPRING-BOOT-ADMIN-SAMPLE-EUREKA
+									</td>
+									<td>
+										28bd895b3165
+									</td>
+									<td>
+										18.12.2019 13:13:03.007
+									</td>
+									<td>
+										<span>
+											REGISTERED
+										</span>
+										<!---->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>			
+		</body>
+</html>
