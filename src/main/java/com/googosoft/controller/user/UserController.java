@@ -22,7 +22,7 @@ public class UserController {
 	public int addUser(String id,String name){
 		User user = new User();
 		user.setId(id);
-		user.setName(name);
+		user.setUserName(name);
 		return service.addUser(user);
 	}
 	
